@@ -1,8 +1,17 @@
-import "./app.scss";
+import "./App.scss";
+import Main from "./components/Main/Main";
+import Navbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
 function App() {
   return (
     <div className="App">
-      <h1 className="something">HI</h1>
+      <section className="main">
+        <Sidebar />
+        <div className="down-sec">
+          <Navbar />
+          <Main />
+        </div>
+      </section>
     </div>
   );
 }
